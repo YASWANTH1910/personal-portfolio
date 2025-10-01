@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8040c08338.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div id ='bold'> <b>Yaswanth</b></div>
+                <ul id="sidemenu">    
+                    <li><a href="#header"> Home </a></li>
+                    <li><a href="#About"> About </a></li>
+                    <li><a href="#portfolio"> Projects </a></li>
+                    <li><a href="#contact"> Contact </a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i> 
+            </nav>
+            <div class="header-text">
+                <p>Front-end Developer</p>
+                <h1>Hi I`m <span>Yaswanth Reddy</span> </h1>
+            </div>
+        </div>
+    </div>
+
+<!-------------- About ------------->
+
+<div id="About">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-ani">
+
+            </div>
+                <div class="about-col-1">
+                    <h2 class="sub-title">About Me</h2>
+                    <p>Hello, I’m Yaswanth Reddy, a Frontend Developer with a strong interest in building interactive and efficient web applications. I specialize in JavaScript and React.js, with hands-on experience in designing responsive layouts and implementing clean, reusable code.
+                        Beyond coding, I’m enthusiastic about solving problems, learning new technologies, and continuously improving my craft. 
+                        My goal is to create digital experiences that are not only functional but also engaging and accessible to all users.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-end</span>Developer</li>
+                            <li><span>Front-end</span>Developer</li>
+                            <li><span>Front-end</span>Developer</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>10th</span>Developer</li>
+                            <li><span>Intermediate</span>hrhdhrehh</li>
+                            <li><span>bachelor`s degree</span>Developer</li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+
+<!-- ---------------My Work------------- -->
+
+ <div id="portfolio">
+    <div class="container">
+        <h2 class="sub-title">Projects</h2>
+        <div class="work-list">
+            <div class="work">
+                <img src="https://img.freepik.com/premium-vector/visit-our-website-3d-illustration-logo-smartphone-screen-mockup-banner-social-media-post_75010-13156.jpg">
+                <div class="layer">
+                    <h3>social media app</h3>
+                    <p>Developed a responsive social media web app using HTML, CSS, and JavaScript with dark mode, interactive posts, and modern UI/UX design.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="https://img.freepik.com/premium-vector/visit-our-website-3d-illustration-logo-smartphone-screen-mockup-banner-social-media-post_75010-13156.jpg">
+                 <div class="layer">
+                    <h3>Flipkart app</h3>
+                    <p>lorem 15</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="https://img.freepik.com/premium-vector/visit-our-website-3d-illustration-logo-smartphone-screen-mockup-banner-social-media-post_75010-13156.jpg">
+                 <div class="layer">
+                    <h3>Personal portfolio</h3>
+                    <p>Designed and developed a responsive personal portfolio website using HTML, CSS, and JavaScript to showcase projects, skills, and experience.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">see more</a>
+    </div>
+ </div>
+
+<!-- ----------------Contact----------------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+            <h2 class="sub-title">Contact me</h2>
+            <p> <i class="fa-solid fa-paper-plane"> </i>yaswanth1910@gmail.com</p>
+            <p> <i class="fa-solid fa-phone-square"> </i>7993108047</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/yaswanth1910/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/YASWANTH1910"><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <a href="Images/Resume.pdf" download class="btn btn2">download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name = 'Name' placeholder="Enter name" required>
+                    <input type="email" name="Email" placeholder="your email" required>
+                    <textarea name="Message" rows="5" placeholder="your Message"></textarea>
+                    <button type="submit" class="btn btn2"> Submit</button>
+                </form>
+                <span id ='msg'> </span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright &copy Personal Portfolio</p>
+    </div>
+</div>
+
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for( tablink of tablinks)
+            tablink.classList.remove("active-link");
+        {
+        for(tabcontent of tabcontents)
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+    const aboutsec = document.getElementById('about');
+    const animecol = aboutsec.querySelector('.about-col-ani');
+
+    const observer = new IntersectionObserver(entries => {
+        entries. forEach(entry => {
+        if (entry.isintersecting) {
+            animecol.classList.add('animate-line');
+            observer.unobserve(entry.target);
+
+            alert("Animation triggered!");
+        }
+    });
+}, {
+    threshold: 0.3
+});
+observer.observe(aboutsec);
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyRjbsNqP7qGjoNF4aQy6QYSfHrD3AwFIi9MlU9Yt-9Yo57lO_W36imhAUt0U_VVYguAw/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById('msg')
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent sucessfully"
+        setTimeout(function(){
+            msg.innerHTML = ''
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+</body>
+</html>
+
