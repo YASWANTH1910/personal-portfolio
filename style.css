@@ -141,14 +141,19 @@ nav ul li a:hover::after{
     margin: 10px 0;
 }
 .tab-contents ul li span{
-    color: #b45769;
-    font-size: 14px;
+    color: #ff004f;
+    font-size: 22px;
 }
 .tab-contents{
     display: none;
 }
 .tab-contents.active-tab{
     display: block;
+}
+.tab-contents ul li br{
+    display: block;
+    margin-top: 10px;
+    content: " ";
 }
 
 /* --------------projects------------- */
