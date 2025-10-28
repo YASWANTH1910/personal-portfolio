@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/8040c08338.js" crossorigin="anonymous"></script>
@@ -22,8 +23,8 @@
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i> 
             </nav>
             <div class="header-text">
-                <p>Front-end Developer</p>
                 <h1>Hi I`m <span>Yaswanth Reddy</span> </h1>
+                <p>Frontend Developer</p>
             </div>
         </div>
     </div>
@@ -49,18 +50,18 @@
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>Frontend :</span> HTML5, CSS3, JavaScript (ES6+), React.js, Redux, Bootstrap</li>
+                            <li><span>Frontend :</span> HTML5, CSS3, JavaScript (ES6+), React.js, Redux, Tailwind</li>
                             <li><span>Backend/Databases :</span> Java, SQL, Node.Js </li>
-                            <li><span>Tools :</span>Git, GitHub, VS Code, Power BI, Advanced Excel</li>
+                            <li><span>Tools :</span>Git, GitHub, VS Code, Power BI, Advance Excel</li>
                             <li><span>Other : </span> Problem-Solving, Analytics, Communication</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>10th class</span>Developer</li>
-                            <li><span>Intermediate </span> - 2018-2020 <br><br> Sri Chaitanya Junior College 
+                            <li><span>10th class</span><br> Sri Chaitanya Childrens Acadamy</li>
+                            <li><span>Intermediate </span> - 2018-2020 <br> Sri Chaitanya Junior College 
                                 <br> 12th -BIEAP CGPA : 8.8</li>
-                            <li><span>bachelor`s degree</span> - 2020-2024<br><br> Sathyabama Institute of Science and Technology 
+                            <li><span>bachelor`s degree</span> - 2020-2024<br> Sathyabama Institute of Science and Technology 
                                 <br> Computer Science and Engineering - CGPA : 7.7</li>
                         </ul>
                     </div>
@@ -92,11 +93,12 @@
                 </div>
             </div>
             <div class="work">
-                <img src="https://img.freepik.com/premium-vector/visit-our-website-3d-illustration-logo-smartphone-screen-mockup-banner-social-media-post_75010-13156.jpg">
+                <!-- <img src="https://img.freepik.com/premium-vector/visit-our-website-3d-illustration-logo-smartphone-screen-mockup-banner-social-media-post_75010-13156.jpg"> -->
+                <h3>Personal portfolio</h3>
+                    <p>Designed and developed a responsive personal portfolio website using HTML, CSS, and JavaScript to showcase projects, skills, and experience.</p>
                  <div class="layer">
                     <h3>Personal portfolio</h3>
-                    <p>Designed and developed a responsive personal portfolio website using HTML, CSS, and JavaScript to showcase projects, skills, and experience.</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="https://yaswanth1910.github.io/personal-portfolio/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
         </div>
@@ -167,23 +169,24 @@
 </script>
 
 <script>
-    const aboutsec = document.getElementById('about');
-    const animecol = aboutsec.querySelector('.about-col-ani');
+  const aboutSec = document.getElementById('About'); // matches your HTML id (capital A)
+  const animeCol = aboutSec.querySelector('.about-col-ani');
 
-    const observer = new IntersectionObserver(entries => {
-        entries. forEach(entry => {
-        if (entry.isintersecting) {
-            animecol.classList.add('animate-line');
-            observer.unobserve(entry.target);
-
-            alert("Animation triggered!");
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animeCol.classList.add('animate-line');
+          observer.unobserve(entry.target);
         }
-    });
-}, {
-    threshold: 0.3
-});
-observer.observe(aboutsec);
+      });
+    },
+    { threshold: 0.3 }
+  );
+
+  observer.observe(aboutSec);
 </script>
+
 
 <script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbyRjbsNqP7qGjoNF4aQy6QYSfHrD3AwFIi9MlU9Yt-9Yo57lO_W36imhAUt0U_VVYguAw/exec'
