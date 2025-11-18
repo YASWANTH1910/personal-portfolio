@@ -103,8 +103,36 @@
                     <a href="https://yaswanth1910.github.io/personal-portfolio/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
+            <div class="work hidden-card">
+                <!-- <img src="https://img.freepik.com/premium-vector/visit-our-website-3d-illustration-logo-smartphone-screen-mockup-banner-social-media-post_75010-13156.jpg"> -->
+                 <h3>social media app</h3>
+                 <p>Developed a responsive social media web app using HTML, CSS, and JavaScript with dark mode, interactive posts, and modern UI/UX design.</p>
+                <div class="layer">
+                    <h3>social media app</h3>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work hidden-card">
+                <!-- <img src="https://img.freepik.com/premium-vector/visit-our-website-3d-illustration-logo-smartphone-screen-mockup-banner-social-media-post_75010-13156.jpg"> -->
+                 <h3>social media app</h3>
+                 <p>Developed a responsive social media web app using HTML, CSS, and JavaScript with dark mode, interactive posts, and modern UI/UX design.</p>
+                <div class="layer">
+                    <h3>social media app</h3>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work hidden-card">
+                <!-- <img src="https://img.freepik.com/premium-vector/visit-our-website-3d-illustration-logo-smartphone-screen-mockup-banner-social-media-post_75010-13156.jpg"> -->
+                 <h3>social media app</h3>
+                 <p>Developed a responsive social media web app using HTML, CSS, and JavaScript with dark mode, interactive posts, and modern UI/UX design.</p>
+                <div class="layer">
+                    <h3>social media app</h3>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
         </div>
-        <a href="#" class="btn">see more</a>
+        <button id="seeMoreBtn" class="btn">See More</button>
+
     </div>
  </div>
 
@@ -205,6 +233,16 @@
       })
       .catch(error => console.error('Error!', error.message))
   })
+</script>
+
+<script>
+  const seeMoreBtn = document.getElementById("seeMoreBtn");
+  const hiddenCards = document.querySelectorAll(".hidden-card");
+
+  seeMoreBtn.addEventListener("click", () => {
+    hiddenCards.forEach(card => card.style.display = "block");
+    seeMoreBtn.style.display = "none";   // hide the button after expanding
+  });
 </script>
 
 </body>

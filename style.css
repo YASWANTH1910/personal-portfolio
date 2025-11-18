@@ -98,8 +98,6 @@ nav ul li a:hover::after{
   align-items: center;
 }
 
-/* --- REPLACE these two rules --- */
-
 .about-col-ani::after {
   content: '';
   position: absolute;
@@ -118,7 +116,6 @@ nav ul li a:hover::after{
   transform: scaleY(1);    
 }
 
-/* Right side (About Me content) */
 .about-col-1 {
   flex-basis: 80%;
   padding-left: 40px; 
@@ -213,6 +210,10 @@ nav ul li a:hover::after{
     padding: 18px;
 }
 
+ .hidden-card {
+  display: none;
+}
+
 .work:hover {
     transform: translateY(-8px) scale(1.04);
     background-position: right center;
@@ -277,6 +278,7 @@ nav ul li a:hover::after{
 /* ----------button----------- */
 .btn{
     display: block;
+    background-color: #080808;
     margin: 50px auto;
     width: fit-content;
     border: 1px solid #ff004f;
