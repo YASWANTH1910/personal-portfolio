@@ -210,7 +210,7 @@ nav ul li a:hover::after{
     padding: 18px;
 }
 
- .hidden-card {
+.hidden-card {
   display: none;
 }
 
@@ -218,6 +218,15 @@ nav ul li a:hover::after{
     transform: translateY(-8px) scale(1.04);
     background-position: right center;
     /* box-shadow: 0 12px 20px rgba(79, 70, 229, 0.6);  */
+}
+
+.work h3 {
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+.work p {
+    margin: 0;
 }
 
 .work img {

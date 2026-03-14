@@ -96,23 +96,23 @@
             </div>
             <div class="work">
                 <h3>Personal portfolio</h3>
-                    <p>Designed and developed a responsive personal portfolio website using HTML, CSS, and JavaScript to showcase projects, skills, and experience.</p>
+                <p>Designed and developed a responsive personal portfolio website using HTML, CSS, and JavaScript to showcase projects, skills, and experience.</p>
                  <div class="layer">
                     <h3>Personal portfolio</h3>
                     <a href="https://yaswanth1910.github.io/personal-portfolio/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work hidden-card">
-                 <h3>One Piece</h3>
-                 <p>Developed a responsive website for SmartComparison of products using ReactJs.</p>
+                <h3>One Piece</h3>
+                <p>Developed a responsive website for SmartComparison of products using ReactJs.</p>
                 <div class="layer">
                     <h3>World of One Piece</h3>
                     <a href="https://onepieceverse.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work hidden-card">
-                 <h3>Unified Business Operations Platform</h3>
-                 <p>Developed a responsive social media web app using HTML, CSS, and JavaScript with dark mode, interactive posts, and modern UI/UX design.</p>
+                <h3>Unified Business Operations Platform</h3>
+                <p>Developed a responsive social media web app using HTML, CSS, and JavaScript with dark mode, interactive posts, and modern UI/UX design.</p>
                 <div class="layer">
                     <h3>Unified Business Operations Platform</h3>
                     <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
@@ -236,8 +236,10 @@
   const hiddenCards = document.querySelectorAll(".hidden-card");
 
   seeMoreBtn.addEventListener("click", () => {
-    hiddenCards.forEach(card => card.style.display = "block");
-    seeMoreBtn.style.display = "none";   // hide the button after expanding
+    hiddenCards.forEach(card => {
+      card.style.display = "flex";
+    });
+    seeMoreBtn.style.display = "none";
   });
 </script>
 
