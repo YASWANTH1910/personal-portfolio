@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8040c08338.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div id ='bold'> <b>Yaswanth</b></div>
+                <ul id="sidemenu">    
+                    <li><a href="#header"> Home </a></li>
+                    <li><a href="#About"> About </a></li>
+                    <li><a href="#portfolio"> Projects </a></li>
+                    <li><a href="#contact"> Contact </a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i> 
+            </nav>
+            <div class="header-text">
+                <h1>Hi I`m <span>Yaswanth Reddy</span> </h1>
+                <p>Full-stack Developer</p>
+            </div>
+        </div>
+    </div>
+
+<!-------------- About ------------->
+
+<div id="About">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-ani">
+
+            </div>
+                <div class="about-col-1">
+                    <h2 class="sub-title">About Me</h2>
+                    <p>Hi, I’m Yaswanth Reddy, a Full-Stack Developer passionate about building modern, scalable, and user-friendly web applications. 
+                        I specialize in JavaScript, React.js, Python, and PostgreSQL, developing responsive frontends and efficient backend systems. 
+                        I enjoy turning ideas into interactive digital experiences with clean, maintainable, and high-performance code. 
+                        I’m driven by solving real-world problems, learning new technologies, and continuously improving my development skills. 
+                        My goal is to create fast, accessible, and impactful applications that deliver great user experiences.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend :</span> HTML5, CSS3, JavaScript (ES6+), React.js </li>
+                            <li><span>Backend/Databases :</span> Python, PostgreSQL, Rest API, Node.Js </li>
+                            <li><span>Tools :</span>Git, GitHub, VS Code, Power BI, Advance Excel </li>
+                            <li><span>Other : </span> Problem-Solving, Analytics, Communication </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>10th class</span><br> Sri Chaitanya Childrens Acadamy</li>
+                            <li><span>Intermediate </span> - 2018-2020 <br> Sri Chaitanya Junior College 
+                                <br> 12th -BIEAP CGPA : 8.8</li>
+                            <li><span>bachelor`s degree</span> - 2020-2024<br> Sathyabama Institute of Science and Technology 
+                                <br> Computer Science and Engineering - CGPA : 7.7</li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+
+<!-- ---------------My Work------------- -->
+
+ <div id="portfolio">
+    <div class="container">
+        <h2 class="sub-title">Projects</h2>
+        <div class="work-list">
+            <div class="work">
+                <h3>SmartComparison of Products</h3>
+                <p>Developed a responsive website for SmartComparison of products using ReactJs.</p>
+                <div class="layer">
+                    <h3>SmartComparison of Products</h3>
+                    <a href="https://smartcomparison-products.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <h3>social media app</h3>
+                <p>Developed a responsive social media web app using HTML, CSS, and JavaScript with dark mode, interactive posts, and modern UI/UX design.</p>
+                <div class="layer">
+                    <h3>social media app</h3>
+                    <a href="https://socialmedia-book.netlify.app/ "><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <h3>Personal portfolio</h3>
+                <p>Designed and developed a responsive personal portfolio website using HTML, CSS, and JavaScript to showcase projects, skills, and experience.</p>
+                 <div class="layer">
+                    <h3>Personal portfolio</h3>
+                    <a href="https://yaswanth1910.github.io/personal-portfolio/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work hidden-card">
+                <h3>One Piece</h3>
+                <p>Developed a responsive website for SmartComparison of products using ReactJs.</p>
+                <div class="layer">
+                    <h3>World of One Piece</h3>
+                    <a href="https://onepieceverse.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work hidden-card">
+                <h3>Unified Business Operations Platform</h3>
+                <p>Developed a responsive social media web app using HTML, CSS, and JavaScript with dark mode, interactive posts, and modern UI/UX design.</p>
+                <div class="layer">
+                    <h3>Unified Business Operations Platform</h3>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <!-- <div class="work hidden-card">
+                 <h3>social media app</h3>
+                 <p>Developed a responsive social media web app using HTML, CSS, and JavaScript with dark mode, interactive posts, and modern UI/UX design.</p>
+                <div class="layer">
+                    <h3>social media app</h3>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div> -->
+        </div>
+        <button id="seeMoreBtn" class="btn">See More</button>
+
+    </div>
+ </div>
+
+<!-- ----------------Contact----------------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+            <h2 class="sub-title">Contact me</h2>
+            <p> <i class="fa-solid fa-paper-plane"> </i>yaswanth1910@gmail.com</p>
+            <p> <i class="fa-solid fa-phone-square"> </i>7993108047</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/yaswanth1910/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/YASWANTH1910"><i class="fa-brands fa-github"></i></a>
+                <a href="https://leetcode.com/u/Yaswanth_1900/"><i class="fa-solid fa-laptop-code"></i></a>
+            </div>
+            <a href="Images/Yaswanth_Resume.pdf" download class="btn btn2">download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name = 'Name' placeholder="Enter name" required>
+                    <input type="email" name="Email" placeholder="your email" required>
+                    <textarea name="Message" rows="5" placeholder="your Message"></textarea>
+                    <button type="submit" class="btn btn2"> Submit</button>
+                </form>
+                <span id ='msg'> </span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright &copy Personal Portfolio</p>
+    </div>
+</div>
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for( tablink of tablinks)
+            tablink.classList.remove("active-link");
+        {
+        for(tabcontent of tabcontents)
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+  const aboutSec = document.getElementById('About'); // matches your HTML id (capital A)
+  const animeCol = aboutSec.querySelector('.about-col-ani');
+
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animeCol.classList.add('animate-line');
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.3 }
+  );
+
+  observer.observe(aboutSec);
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyRjbsNqP7qGjoNF4aQy6QYSfHrD3AwFIi9MlU9Yt-9Yo57lO_W36imhAUt0U_VVYguAw/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById('msg')
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent sucessfully"
+        setTimeout(function(){
+            msg.innerHTML = ''
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+<script>
+  const seeMoreBtn = document.getElementById("seeMoreBtn");
+  const hiddenCards = document.querySelectorAll(".hidden-card");
+
+  seeMoreBtn.addEventListener("click", () => {
+    hiddenCards.forEach(card => {
+      card.style.display = "flex";
+    });
+    seeMoreBtn.style.display = "none";
+  });
+</script>
+
+</body>
+</html>
